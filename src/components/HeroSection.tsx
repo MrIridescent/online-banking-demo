@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-team-bg.jpg";
 
 const HeroSection = () => {
@@ -46,33 +47,35 @@ const HeroSection = () => {
           {/* Welcome Text */}
           <div className="mb-6">
             <span className="text-primary text-sm font-medium tracking-widest uppercase">
-              welcome to Wishlan Agency
+              welcome to Iridescent Internet Solutions
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-foreground mb-8 leading-none text-shadow-glow">
-            SMART IT<br />
-            <span className="text-primary">SOLUTIONS</span>
+            FULL SPECTRUM<br />
+            <span className="text-primary">IT SERVICES</span>
           </h1>
 
           {/* Subheading */}
           <div className="mb-12 max-w-2xl">
             <h2 className="text-xl md:text-2xl text-foreground/90 font-medium mb-4">
-              Smart, Fast & Future-Ready
+              Digital Innovation & Technology Excellence
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              We specialize in Website Development and innovative IT services designed to transform 
-              businesses for the digital age. From Web Design and Development to Mobile Application 
-              Design and Development, our team delivers powerful online experiences that boost 
-              visibility, growth, and success.
+              IRIDESCENT INTERNET SOLUTIONS LIMITED delivers comprehensive IT services and digital 
+              solutions. From web development and cloud infrastructure to cybersecurity and data 
+              analytics, we empower businesses with cutting-edge technology solutions that drive 
+              growth and competitive advantage in the digital marketplace.
             </p>
           </div>
 
           {/* CTA Button */}
-          <Button className="btn-hero shadow-primary hover:shadow-glow">
-            DISCOVER MORE
-          </Button>
+          <Link to="/services">
+            <Button className="btn-hero shadow-primary hover:shadow-glow">
+              EXPLORE SERVICES
+            </Button>
+          </Link>
         </div>
       </div>
 
