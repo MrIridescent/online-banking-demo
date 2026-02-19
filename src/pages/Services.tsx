@@ -198,7 +198,10 @@ const Services = () => {
                 </div>
 
                 <Link to="/contact" className="block">
-                  <Button className={`w-full ${pkg.popular ? 'bg-primary hover:bg-primary/90' : 'variant-outline'}`}>
+                  <Button
+                    variant={pkg.popular ? "default" : "outline"}
+                    className={`w-full ${pkg.popular ? 'bg-primary hover:bg-primary/90' : ''}`}
+                  >
                     Get Started
                   </Button>
                 </Link>

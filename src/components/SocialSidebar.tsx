@@ -2,10 +2,10 @@ import { Facebook, Twitter, Youtube, Linkedin } from "lucide-react";
 
 const SocialSidebar = () => {
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" }, 
-    { icon: Youtube, href: "#", label: "YouTube" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Facebook, href: "https://www.facebook.com", label: "Facebook" },
+    { icon: Twitter, href: "https://x.com", label: "Twitter" }, 
+    { icon: Youtube, href: "https://www.youtube.com", label: "YouTube" },
+    { icon: Linkedin, href: "https://www.linkedin.com", label: "LinkedIn" },
   ];
 
   return (
@@ -19,6 +19,8 @@ const SocialSidebar = () => {
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-muted/50 hover:bg-primary transition-all duration-300 rounded-sm flex items-center justify-center text-muted-foreground hover:text-primary-foreground group"
                 aria-label={social.label}
               >

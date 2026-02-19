@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Banking Demo — Deep Readiness Infographic</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --panel: #151b2d;
+        --panel-2: #1d2540;
+        --text: #f3f6ff;
+        --muted: #a8b1d1;
+        --accent: #f5a623;
+        --ok: #3fb950;
+        --warn: #d29922;
+        --danger: #f85149;
+        --line: #2c3557;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: linear-gradient(180deg, #090e1d, #111833);
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      h1, h2, h3, p { margin: 0; }
+      .hero {
+        background: radial-gradient(circle at top right, #2b355f, #13192e 55%);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 24px;
+      }
+      .badge {
+        display: inline-block;
+        border: 1px solid #6d79ad;
+        color: #c8d2ff;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+      .sub {
+        color: var(--muted);
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+      .grid {
+        margin-top: 18px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 14px;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 16px;
+      }
+      .span-4 { grid-column: span 4; }
+      .span-6 { grid-column: span 6; }
+      .span-8 { grid-column: span 8; }
+      .span-12 { grid-column: span 12; }
+      .kpi {
+        font-size: 34px;
+        font-weight: 800;
+        margin: 8px 0;
+      }
+      .muted { color: var(--muted); font-size: 14px; line-height: 1.5; }
+      .pill {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 12px;
+        border-radius: 999px;
+        padding: 4px 8px;
+        border: 1px solid var(--line);
+      }
+      .ok { color: var(--ok); border-color: #2d6e3c; }
+      .warn { color: var(--warn); border-color: #6f5621; }
+      .danger { color: var(--danger); border-color: #7d302f; }
+      ul { margin: 10px 0 0 18px; color: var(--muted); line-height: 1.6; }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        color: var(--muted);
+      }
+      th, td {
+        border: 1px solid var(--line);
+        padding: 8px;
+        text-align: left;
+        font-size: 13px;
+      }
+      th { color: #d9e0ff; background: var(--panel-2); }
+      .timeline {
+        margin-top: 12px;
+        border-left: 2px solid var(--line);
+        padding-left: 12px;
+      }
+      .step { margin: 12px 0; }
+      .step b { color: #e9edff; }
+      .refs a { color: #9ec5ff; text-decoration: none; }
+      .refs a:hover { text-decoration: underline; }
+      @media (max-width: 900px) {
+        .span-4, .span-6, .span-8 { grid-column: span 12; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="hero">
+        <div class="badge">Operational Intelligence • 2026-02-19</div>
+        <h1>Online Banking Demo — Hype vs Reality Infographic</h1>
+        <p class="sub">
+          A granular readiness scan of the current project state: what is functional now, what is not production-banking ready,
+          and the exact upgrade path to close critical gaps.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="card span-4">
+          <h3>Frontend Functional Coverage</h3>
+          <div class="kpi">82%</div>
+          <p class="muted">Navigation, contact flow, chat responses, and map are operational at frontend level.</p>
+          <span class="pill ok">Functional UI</span>
+        </article>
+
+        <article class="card span-4">
+          <h3>Banking-Core Readiness</h3>
+          <div class="kpi">12%</div>
+          <p class="muted">No ledger, no transaction engine, no regulated auth/compliance control plane.</p>
+          <span class="pill danger">Critical Gaps</span>
+        </article>
+
+        <article class="card span-4">
+          <h3>Ops Documentation Maturity</h3>
+          <div class="kpi">74%</div>
+          <p class="muted">Runbook, technical manual, gap analysis, and references are now documented.</p>
+          <span class="pill warn">Process Improving</span>
+        </article>
+
+        <article class="card span-8">
+          <h3>Hype vs Reality Matrix</h3>
+          <table>
+            <thead>
+              <tr><th>Domain</th><th>Claim</th><th>Reality</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Chat</td><td>Live assistant</td><td>Local deterministic assistant</td><td>Partial</td></tr>
+              <tr><td>Contact</td><td>Message delivery</td><td>Functional mail-client handoff</td><td>Operational</td></tr>
+              <tr><td>Map</td><td>Office location</td><td>OpenStreetMap embedded map</td><td>Operational</td></tr>
+              <tr><td>Transactions</td><td>Banking ready</td><td>No backend transaction core</td><td>Not Met</td></tr>
+              <tr><td>Compliance</td><td>Enterprise compliant</td><td>No evidential implementation</td><td>Not Met</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="card span-4">
+          <h3>Noob-Friendly Turnkey Path</h3>
+          <ul>
+            <li>Run <b>npm run setup:wizard</b></li>
+            <li>Run <b>npm run dev</b></li>
+            <li>Open <b>localhost:5173</b></li>
+            <li>Follow docs runbook checklist</li>
+          </ul>
+        </article>
+
+        <article class="card span-6">
+          <h3>Environment Recommendations</h3>
+          <ul>
+            <li>Minimum: 4 vCPU / 8 GB RAM / Node 20+</li>
+            <li>Recommended: 8 vCPU / 16 GB RAM / npm 10+</li>
+            <li>Production hosting: CDN edge + TLS + HSTS</li>
+            <li>Observability: error tracking + core web vitals</li>
+          </ul>
+        </article>
+
+        <article class="card span-6">
+          <h3>Critical Security/Compliance Additions</h3>
+          <ul>
+            <li>MFA + RBAC/ABAC + session management</li>
+            <li>Idempotent transaction orchestration + immutable ledger</li>
+            <li>KYC/AML + sanctions checks + audit evidence pipeline</li>
+            <li>SIEM/SOAR integration and incident playbooks</li>
+          </ul>
+        </article>
+
+        <article class="card span-12">
+          <h3>Roadmap Timeline</h3>
+          <div class="timeline">
+            <div class="step"><b>Phase 1 (0-30 days):</b> Auth/API skeleton, structured logging, threat model baseline.</div>
+            <div class="step"><b>Phase 2 (30-90 days):</b> Ledger and transaction core, MFA, security CI pipelines.</div>
+            <div class="step"><b>Phase 3 (90-180 days):</b> Fraud analytics, compliance automation, resilience drills.</div>
+          </div>
+        </article>
+
+        <article class="card span-12 refs">
+          <h3>References</h3>
+          <ul>
+            <li><a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">OWASP Top 10</a></li>
+            <li><a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer">NIST Cybersecurity Framework 2.0</a></li>
+            <li><a href="https://www.pcisecuritystandards.org/" target="_blank" rel="noopener noreferrer">PCI DSS v4.0</a></li>
+            <li><a href="https://attack.mitre.org/" target="_blank" rel="noopener noreferrer">MITRE ATT&amp;CK</a></li>
+            <li><a href="https://sre.google/workbook/" target="_blank" rel="noopener noreferrer">Google SRE Workbook</a></li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+# Online Banking Demo — Operational Edition
 
-## Project info
+Last Updated: 2026-02-19
 
-**URL**: https://lovable.dev/projects/43b7e051-2b5e-49b1-a33f-3f810d3ededa
+Creator / Programmer Branding:
+David Akpoviroro Oke  
+MrIridescent (The Creative Renaissance Man)
 
-## How can I edit this code?
+## Manifesto of Capability
 
-There are several ways of editing your application.
+Read directly: [Manifesto of Capability](docs/MANIFESTO_OF_CAPABILITY.md)  
+Read unconventional cover letter: [Digital Polymath Cover Letter](docs/COVER_LETTER_DIGITAL_POLYMATH.md)
 
-**Use Lovable**
+Hashtags: #DigitalPolymath #MrIridescent #Creative #Renaissance
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/43b7e051-2b5e-49b1-a33f-3f810d3ededa) and start prompting.
+## Project Scope
 
-Changes made via Lovable will be committed automatically to this repo.
+This repository is currently a production-style frontend system (React + Vite + TypeScript + Tailwind + shadcn/ui) with:
 
-**Use your preferred IDE**
+- Functional contact workflow via pre-filled email handoff (`mailto`).
+- Functional interactive assistant widget (rule-based real responses).
+- Functional map without API key requirements (OpenStreetMap embed).
+- No placeholder UI stubs in core interaction surfaces.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+For full banking-grade production, backend and compliance controls are still required. See:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- [Forensic Hype vs Reality Audit](docs/FORENSIC_HYPE_VS_REALITY_AUDIT.md)
+- [Production Readiness Gap Analysis](docs/PRODUCTION_READINESS_GAP_ANALYSIS.md)
 
-Follow these steps:
+## Turnkey Setup Wizard (Noob Friendly)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Option A (one command)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+npm run setup:wizard
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Option B (manual quick start)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open: `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Commands
 
-**Use GitHub Codespaces**
+```bash
+npm run dev         # Start dev server
+npm run build       # Production build
+npm run preview     # Preview production build
+npm run lint        # ESLint checks
+npm run setup:wizard
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Documentation Suite
 
-## What technologies are used for this project?
+- [Technical Manual (Step-by-step)](docs/TECHNICAL_MANUAL.md)
+- [Operations Runbook](docs/OPERATIONS_RUNBOOK.md)
+- [Environment & Hardware Recommendations](docs/ENVIRONMENT_AND_HARDWARE_RECOMMENDATIONS.md)
+- [Use Cases (Abstract, Fictional, Real Events)](docs/USE_CASES_AND_INCIDENTS.md)
+- [Forensic Hype vs Reality Audit](docs/FORENSIC_HYPE_VS_REALITY_AUDIT.md)
+- [Production Readiness Gap Analysis](docs/PRODUCTION_READINESS_GAP_ANALYSIS.md)
+- [Visual HTML Infographic](docs/infographic.html)
 
-This project is built with:
+## Environment Recommendation (Summary)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Node.js 20 LTS or 22 LTS
+- npm 10+
+- 4 CPU / 8 GB RAM (minimum dev)
+- 8 CPU / 16 GB RAM (recommended for CI + scans + browser profiling)
 
-## How can I deploy this project?
+Full specs and tuning: [Environment & Hardware Recommendations](docs/ENVIRONMENT_AND_HARDWARE_RECOMMENDATIONS.md)
 
-Simply open [Lovable](https://lovable.dev/projects/43b7e051-2b5e-49b1-a33f-3f810d3ededa) and click on Share -> Publish.
+## Security & Compliance Notice
 
-## Can I connect a custom domain to my Lovable project?
+This repository does **not** currently include:
 
-Yes, you can!
+- Customer authentication backend
+- Ledger / transactional core
+- PCI-DSS-scoped card processing pipeline
+- Fraud analytics engine
+- SIEM + SOC operational integration
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+These are documented in detail as mandatory controls before any true banking production launch.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## References
+
+See consolidated standards and source references in each document’s reference section.

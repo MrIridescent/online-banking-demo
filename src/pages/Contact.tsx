@@ -81,12 +81,23 @@ const Contact = () => {
       return;
     }
 
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
+    const subject = encodeURIComponent(formData.subject || `Project inquiry from ${formData.name}`);
+    const body = encodeURIComponent(
+      [
+        `Name: ${formData.name}`,
+        `Email: ${formData.email}`,
+        `Phone: ${formData.phone || "Not provided"}`,
+        "",
+        "Message:",
+        formData.message,
+      ].join("\n")
+    );
+
+    window.location.href = `mailto:hello@i2sltd.tech?subject=${subject}&body=${body}`;
     
     toast({
-      title: "Message Sent Successfully!",
-      description: "We'll get back to you within 24 hours.",
+      title: "Draft Email Prepared",
+      description: "Your email client should open with your pre-filled message.",
     });
 
     // Reset form
