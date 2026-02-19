@@ -8,8 +8,17 @@ MrIridescent (The Creative Renaissance Man)
 
 ## Manifesto of Capability
 
-Read directly: [Manifesto of Capability](docs/MANIFESTO_OF_CAPABILITY.md)  
-Read unconventional cover letter: [Digital Polymath Cover Letter](docs/COVER_LETTER_DIGITAL_POLYMATH.md)
+Read directly: [Manifesto of Capability](MANIFESTO_OF_CAPABILITY.md)  
+Read unconventional cover letter: [Digital Polymath Cover Letter](COVER_LETTER_DIGITAL_POLYMATH.md)
+
+Tone variants:
+
+- [Manifesto — Executive](MANIFESTO_EXECUTIVE.md)
+- [Manifesto — Technical](MANIFESTO_TECHNICAL.md)
+- [Manifesto — Recruiter](MANIFESTO_RECRUITER.md)
+- [Cover Letter — Executive](COVER_LETTER_EXECUTIVE.md)
+- [Cover Letter — Technical](COVER_LETTER_TECHNICAL.md)
+- [Cover Letter — Recruiter](COVER_LETTER_RECRUITER.md)
 
 Hashtags: #DigitalPolymath #MrIridescent #Creative #Renaissance
 
